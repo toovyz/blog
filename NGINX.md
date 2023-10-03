@@ -5,11 +5,9 @@ Use Ubuntu Server, run following command as root:
 :~# apt install nginx
 ```
 After installion, run `:~# nginx -v` to verify the installation.
-
-![](https://hackmd.io/_uploads/B1hp8dJJp.png)
-
+![image](https://github.com/toovyz/blog/assets/90684283/6d661a18-8a6d-4b4e-900d-0d060f839252)
 Run `localhost`:
-![](https://hackmd.io/_uploads/B1Nj8OyyT.png)
+![image](https://github.com/toovyz/blog/assets/90684283/b6f7a486-41c9-4f75-b1b2-d15ebb57ff46)
 *Source link:* https://docs.nginx.com/nginx/admin-guide/installing-nginx/.
 
 # 2. NGINX Web Server
@@ -24,8 +22,7 @@ Firstly, create `index.html` file in this location:
 :/var/www/toovy.com# touch index.html
 :/var/www/toovy.com# nano index.html
 ```
-![](https://hackmd.io/_uploads/HJoVJ9Jy6.png)
-
+![image](https://github.com/toovyz/blog/assets/90684283/84bef32c-9799-4a0a-a86c-2427236963c0)
 Secondly, create `toovyserver` file in `/etc/nginx/sites-enabled/` directory.
 ```
 :/var/www/toovy.com# cd /etc/nginx/sites-enabled/
@@ -50,12 +47,11 @@ server {
 ```
 Thirdly, change machine hosts to match `server_name` by editing `/etc/hosts` file.
 `:/etc/nginx/sites-enabled# nano /etc/hosts`
-![](https://hackmd.io/_uploads/HyG4Q9J1a.png)
+![image](https://github.com/toovyz/blog/assets/90684283/83e0ee33-ca7e-4b07-b7aa-a9d1836fdf57)
 In my case, I add `toovy.com` for `176.16.191.148` ens33 interface.
 Finally, restart nginx service and check new site. 
 `:/etc/nginx/sites-enabled# service nginx restart`
-
-![](https://hackmd.io/_uploads/BJMFB9yka.png)
+![image](https://github.com/toovyz/blog/assets/90684283/6457889e-da5a-4503-835a-216c4b044b0b)
 Source: https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview
 # 3. NGINX Reverse Proxy
 In this mark, I will configure my server as a proxy serever. NGINX server will pass request to `gmail.com.`
@@ -77,8 +73,7 @@ server {
 }
 ```
 Add `toovyrev.com` into `/etc/hosts` file. Then open browser and request `toovyrev.com:99`.
-
-![](https://hackmd.io/_uploads/BJA_nRMJ6.png)
+![image](https://github.com/toovyz/blog/assets/90684283/740988e2-8324-4f6a-b8d6-627388dfb8fb)
 
 # 4.Load Balancer
 Load balancing across multiple application instances is a commonly used technique for optimizing resource utilization, maximizing throughput, reducing latency, and ensuring fault‑tolerant configurations.
@@ -128,6 +123,5 @@ server {
 }
 ```
 Run two server, do command `curl toovy.com:99`.
-![](https://hackmd.io/_uploads/HycJGl716.png)
-
+![image](https://github.com/toovyz/blog/assets/90684283/f33109ad-e92d-475f-b4fe-78f8bb100ef9)
 Server1 and Server2 alternate process request from proxy server `toovy.com:99`.
