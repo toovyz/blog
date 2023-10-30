@@ -23,7 +23,7 @@ Kiểm tra kết nối với database bằng db_status`.
 <img width="522" alt="Screenshot 2023-10-28 at 15 32 58" src="https://github.com/toovyz/blog/assets/90684283/0908decf-415a-4de3-9df9-2ab7deb44ded">
 
 
-# Scan port
+# TCP scan
 Path tới script scan port: `/usr/share/metasploit-framework/modules/auxiliary/scanner/portscan`.
 
 <img width="816" alt="Screenshot 2023-10-28 at 15 04 52" src="https://github.com/toovyz/blog/assets/90684283/3e05e0a3-714b-463d-9003-85fb0c1f6a22">
