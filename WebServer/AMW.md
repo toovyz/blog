@@ -1,4 +1,4 @@
-Dựng một webserver trên ubuntu với:
+Bài này mình dựng một webserver trên ubuntu với:
 - Web server: Apache2.
 - Database: MariaDB.
 - CMS: Wordpress.
