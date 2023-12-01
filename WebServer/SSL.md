@@ -26,7 +26,7 @@ Bấm Next đến `Server Roles` click chọn `DNS Server` -> `Add Features`.
 
 Next các trang sau và Install.
 
-# 1.2. Cấu hình DNS server
+## 1.2. Cấu hình DNS server
 
 Vào `Tools` -> `DNS`. Tại đây, mình sẽ tạo một Forward Lookup Zone - dùng để phân giải thuận từ địa chỉ ip sang tên miền.
 
