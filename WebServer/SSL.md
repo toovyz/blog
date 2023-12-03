@@ -8,7 +8,7 @@ Mình dùng Window Server 2012 làm DNS Server.
 
 Đặt IP tĩnh cho máy.
 
-![image](https://github.com/toovyz/blog/assets/90684283/130ce43f-82ed-41f6-aa81-5736c1925af6)
+![image](https://github.com/toovyz/blog/assets/90684283/6e4f955b-ab8f-46cf-8dc5-78f120d980c2)
 
 Tiếp theo, đổi tên cho máy thành VSERVER.
 
