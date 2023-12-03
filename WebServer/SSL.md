@@ -65,7 +65,7 @@ Browse tới file `vserver.vcore.com` sau đó bấm OK.
 
 Kiểm tra lại.
 
-![image](https://github.com/toovyz/blog/assets/90684283/536b77cf-dba0-4003-a137-5a69dc77edeb)
+![image](https://github.com/toovyz/blog/assets/90684283/f33eaa1e-fb0c-484f-9b62-202742fef74d)
 
 DNS forwarder sẽ giải quyết yêu cầu, nếu không giải quyết được nó sẽ chuyển tiếp sang DNS forwarder khác​. Mình sẽ forward ra DNS của google (8.8.8.8).
 
