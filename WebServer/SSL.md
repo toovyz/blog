@@ -49,7 +49,7 @@ Chuột phải `Reverse Lookup Zones` -> `New Zone…`.
 Tại `Reverse Lookup Zone Name` nhập tên Primary DNS suffix vào ô `IPv4 Reverse Lookup Zone`, sau đó điền IP của máy vào ô `NetWWork ID`.
 
 ![image](https://github.com/toovyz/blog/assets/90684283/78af74b4-0cb7-4e94-8eed-a25fc9bed37c)
-![image](https://github.com/toovyz/blog/assets/90684283/96ecff53-9fd1-4ac7-8a52-aea17664374f)
+![image](https://github.com/toovyz/blog/assets/90684283/5b4d86e9-3a87-486b-ad77-614311067d6a)
 
 Tại `Dynamic Update`, chọn `Allow both nonsecure and secure dynamic updates`, sau đó nhấn Next và Finish.
 
