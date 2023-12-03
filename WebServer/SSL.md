@@ -1,6 +1,6 @@
 Bài này mình sẽ dựng một DNS server để phân giải tên miền cho website mình đã dựng trước đó. Sau đó cấp SSL cho website này.
 
-# 1. Cấu hình hình DNS server
+# 1. DNS server
 
 Mình dùng Window Server 2012 làm DNS Server.
 
@@ -67,3 +67,41 @@ Kiểm tra lại.
 
 ![image](https://github.com/toovyz/blog/assets/90684283/536b77cf-dba0-4003-a137-5a69dc77edeb)
 
+DNS forwarder sẽ giải quyết yêu cầu, nếu không giải quyết được nó sẽ chuyển tiếp sang DNS forwarder khác​. Mình sẽ forward ra DNS của google (8.8.8.8).
+
+Chuột phải vào Forwarders -> Properties.
+
+![image](https://github.com/toovyz/blog/assets/90684283/f594f74a-f3cd-4d2c-a606-323c29906f4d)
+
+Thêm DNS của google và nhấn OK.
+
+![image](https://github.com/toovyz/blog/assets/90684283/fab24e9f-334d-4eb7-a541-c9a38f799027)
+
+Kết quả: 
+
+![image](https://github.com/toovyz/blog/assets/90684283/72ffda42-f649-43a9-afa0-da9f2fe54968)
+
+# 2. Cấu hình Ubuntu server
+## 2.1. Tải các file cần thiết
+Tải free ssl tại: https://github.com/toovyz/freessl. Để các file tại `/etc/apache2/ssl`.
+
+![image](https://github.com/toovyz/blog/assets/90684283/54dd41c5-5cc9-4534-a7d0-4787c6a44bf4)
+
+## 2.2. Cấu hình
+
+`nano /etc/apache2/sites-available/relax24h.net.conf`.
+
+![image](https://github.com/toovyz/blog/assets/90684283/5aae66cd-0dcd-4402-8a77-9c087eff48b2)
+
+Vì yêu cầu là tạo web tên là relax24h.net nhưng mình lấy DNS Server cũ là vcore.com nên khi đặt tên file hơi mâu thuẫn tí, mọi người thông cảm :((.
+
+Sau đó chạy `apache2ctl configtest` để kiểm tra, và `systemctl restart apache2` để ấp dụng các cấu hình.
+
+Mở web bằng máy trong LAN:
+
+![image](https://github.com/toovyz/blog/assets/90684283/e941ea0b-8b63-4da7-b1bd-7ce4ea90012f)
+
+Vậy là bài lab đã hoàn thành nhưng chưa hoàn chỉnh:
+- Hình như do browser bản cũ quá nên web không load được giao diện như lần trước.
+- Mình chưa xin CA từ domain.
+Mong rằng mình sẽ có thời gian để update bài lab hoàn chỉnh nhất có thể.
