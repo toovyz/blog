@@ -38,7 +38,7 @@ Chuột phải `Forward Lookup Zones` -> `New Zone…`.
 
 Các trang trước để mặc định, tại `Zone Name` nhập tên Primary DNS suffix vào ô `Zone name`.
 
-![image](https://github.com/toovyz/blog/assets/90684283/eb925814-7ec2-4095-b380-61e7c6b2e87c)
+![image](https://github.com/toovyz/blog/assets/90684283/1e079cec-804f-4c0f-be56-810c0af5650f)
 
 Tại `Dynamic Update`, chọn `Allow both nonsecure and secure dynamic updates`, sau đó nhấn Next và Finish.
 
@@ -59,13 +59,13 @@ Chuột phải vào Reverse Lookup Zones mới tạo -> `New Pointer (PTR)`.
 
 ![image](https://github.com/toovyz/blog/assets/90684283/b8a75e71-efee-4c69-a03b-7f0a3152d03c)
 
-Browse tới file `vserver.vcore.com` sau đó bấm OK. 
+Browse tới file `vserver.relax24h.net` sau đó bấm OK. 
 
-![image](https://github.com/toovyz/blog/assets/90684283/35f53cac-a47c-4e52-8fbc-571e9dc6d965)
+![image](https://github.com/toovyz/blog/assets/90684283/10016ff7-9b75-4b4f-91f1-43485af8668f)
 
 Kiểm tra lại.
 
-![image](https://github.com/toovyz/blog/assets/90684283/f33eaa1e-fb0c-484f-9b62-202742fef74d)
+![image](https://github.com/toovyz/blog/assets/90684283/70d2446e-64c0-431a-b6ff-c454395fdf95)
 
 DNS forwarder sẽ giải quyết yêu cầu, nếu không giải quyết được nó sẽ chuyển tiếp sang DNS forwarder khác​. Mình sẽ forward ra DNS của google (8.8.8.8).
 
