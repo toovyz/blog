@@ -14,7 +14,7 @@ Tiếp theo, đổi tên cho máy thành VSERVER.
 
 Vào Control Panel\System and Security\System. Chọn `Change Settings` -> Change. Điền tên máy vào ô `Computer name`, sau đó bấm `More`, điền `Primary DNS suffix`, đồng thời là tên domain sau này. Chọn OK và Apply, sau đó khởi động lại máy.
 
-![image](https://github.com/toovyz/blog/assets/90684283/d659bfb6-121a-4112-9cd8-076007608b28)
+![image](https://github.com/toovyz/blog/assets/90684283/9f2c4d90-bd6b-4500-93c6-9c4e53a1d684)
 
 Vào `Manage` -> `Add Roles and Features`.
 
