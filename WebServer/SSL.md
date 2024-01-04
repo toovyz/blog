@@ -1,7 +1,6 @@
 Bài này mình sẽ dựng một DNS server để phân giải tên miền cho website mình đã dựng trước đó. Sau đó cấp SSL cho website này.
 
 # 1. DNS server
-
 Mình dùng Window Server 2012 làm DNS Server.
 
 ## 1.1. Chuẩn bị và cài đặt
@@ -81,8 +80,43 @@ Kết quả:
 
 ![image](https://github.com/toovyz/blog/assets/90684283/72ffda42-f649-43a9-afa0-da9f2fe54968)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 2. Cấu hình Ubuntu server
-## 2.1. Tải các file cần thiết
+## 2.1. Cấu hình ip tĩnh và tải SSL
+Sửa file 00-installer-config.yaml: `sudo nano /etc/netplan/00-installer-config.yaml`.
+
+![image](https://github.com/toovyz/blog/assets/90684283/b07110f6-1ca2-4fd9-9b00-8d8874b64db5)
+
+
 Tải free ssl tại: https://github.com/toovyz/freessl. Để các file tại `/etc/apache2/ssl`.
 
 ![image](https://github.com/toovyz/blog/assets/90684283/54dd41c5-5cc9-4534-a7d0-4787c6a44bf4)
